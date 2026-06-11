@@ -16,7 +16,7 @@
   data-title="Beach Benz AI Receptionist"
   data-color="#c9a84c"
   data-fab-text="Talk to Our AI"
-  data-bot-name="Beach Benz AI"
+  data-bot-name="Orbit AI Receptionist"
   data-popup-message="Hi! I'm the Beach Benz AI receptionist. Ask me anything about our services!"
   data-show-ai-popup="true"
   data-show-ai-popup-time="6"
@@ -604,6 +604,10 @@ footer { background: var(--dark); border-top: 1px solid var(--border2); padding:
 <style>
 @keyframes ringPulse { 0%,100%{transform:scale(1);opacity:0.6} 50%{transform:scale(1.12);opacity:1} }
 @keyframes livePulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.85)} }
+/* Force-center all text inside Retell widget */
+#retell-widget-container *, retell-widget *, [class*="retell"] * { text-align: center !important; }
+retell-widget-container p, [class*="retell-widget"] p,
+[class*="retell-widget"] span, [class*="retell-widget"] div { text-align: center !important; }
 /* Mobile AI section */
 @media(max-width:768px) {
   #ai-receptionist { padding:80px 24px !important; }
